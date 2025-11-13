@@ -8,7 +8,7 @@ import Aboutme from "./components/Aboutme";
 export default function App() {
   return (
     <div className="animate-gradient min-h-screen">
-      <div className="backdrop-blur-sm bg-black/60 min-h-screen">
+      <div className="backdrop-blur-md bg-slate-950/55 min-h-screen">
         <Navbar />
         <Hero />
          <Aboutme />
