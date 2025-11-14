@@ -9,20 +9,14 @@ export default function Projects() {
         {
           title: "Wildfire Prediction System",
           img: "/src/assets/img/forest.png",
-          desc: "A web app predicting forest fire risk across Nepal using machine learning (CatBoost + FastAPI + React).",
+          desc: "A web app predicting forest fire risk across Nepal using machine learning ( FastAPI + React).",
           code: "https://github.com/yourusername/wildfire-predict",
         },
         {
-          title: "Courier Management System",
-          img: "/project2.jpg",
-          desc: "A complete delivery management system with admin dashboard and real-time tracking.",
-          code: "https://github.com/yourusername/courier-system",
-        },
-        {
           title: "Portfolio Website",
-          img: "/project3.jpg",
+          img: "/src/assets/img/portfolio.png",
           desc: "My personal portfolio showcasing projects, skills, and resume — built with React + Tailwind.",
-          code: "https://github.com/yourusername/portfolio",
+          code: "https://github.com/pris1345/Portfolio",
         },
       ].map((project) => (
         <div
