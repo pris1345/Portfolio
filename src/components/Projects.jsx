@@ -10,7 +10,7 @@ export default function Projects() {
           title: "Wildfire Prediction System",
           img: "img/forest.png",
           desc: "A web app predicting forest fire risk across Nepal using machine learning ( FastAPI + React).",
-          code: "https://github.com/yourusername/wildfire-predict",
+          code: "https://github.com/pris1345/Forest_Fire_Prediction",
         },
         {
           title: "Portfolio Website",
