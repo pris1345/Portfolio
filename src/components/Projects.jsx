@@ -8,13 +8,13 @@ export default function Projects() {
       {[
         {
           title: "Wildfire Prediction System",
-          img: "/src/assets/img/forest.png",
+          img: "img/forest.png",
           desc: "A web app predicting forest fire risk across Nepal using machine learning ( FastAPI + React).",
           code: "https://github.com/yourusername/wildfire-predict",
         },
         {
           title: "Portfolio Website",
-          img: "/src/assets/img/portfolio.png",
+          img: "img/portfolio.png",
           desc: "My personal portfolio showcasing projects, skills, and resume — built with React + Tailwind.",
           code: "https://github.com/pris1345/Portfolio",
         },

@@ -4,7 +4,7 @@ export default function Aboutme() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-1/3">
           <img
-            src="/src/assets/img/my.jpg"
+            src="img/my.jpg"
             alt="Brijesh Dahal"
             className="rounded-2xl shadow-lg w-full border-4 border-cyan-500"
           />
