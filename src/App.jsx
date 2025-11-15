@@ -7,7 +7,7 @@ import ParticleBackground from "./components/ParticleBackground";
 import Aboutme from "./components/Aboutme";
 export default function App() {
   return (
-    <div className="animate-gradient min-h-screen">
+    <div className="animate-gradient min-h-screen min-w-[127vw] sm:min-w-[100vw]">
       <div className="backdrop-blur-md bg-slate-950/55 min-h-screen">
         <Navbar />
         <Hero />
