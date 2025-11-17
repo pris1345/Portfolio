@@ -7,7 +7,7 @@ export default function Navbar() {
                 <a href="#projects" className="hover:text-cyan-400">Projects</a>
                 <a href="#contact" className="hover:text-cyan-400">Contact</a>
                 <a
-                    href="/BRIJESH DAHAL.pdf"
+                    href="/Resume_BRIJESH_DAHAL.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-cyan-400 transition-colors"
