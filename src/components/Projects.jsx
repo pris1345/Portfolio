@@ -10,7 +10,7 @@ export default function Projects() {
     },
     {
       title: "Portfolio Website",
-      img: "img/portfolio.png",
+      img: "img/port.png",
       desc: "My personal portfolio showcasing projects, skills, and resume — built with React + Tailwind.",
       code: "https://github.com/pris1345/Portfolio",
     },
