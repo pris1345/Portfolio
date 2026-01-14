@@ -51,6 +51,20 @@ function Contact() {
             </span>
           </motion.a>
 
+          <motion.a
+            href="https://www.linkedin.com/in/brijesh-d-9a2a03399/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors relative group"
+            whileHover={{ scale: 1.2, y: -5 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <FaLinkedin />
+            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Linkedin
+            </span>
+          </motion.a>
+
           <motion.button
             onClick={() => setShowEmail(true)}
             className="text-gray-400 hover:text-white transition-colors relative group"

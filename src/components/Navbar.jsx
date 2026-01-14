@@ -35,7 +35,7 @@ export default function Navbar() {
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
                 </motion.a>
                 <motion.a
-                    href="/Resume_BRIJESH_DAHAL.pdf"
+                    href="/Resume_BRIJESH_DAHAL (2).pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-cyan-400 transition-colors relative group"

@@ -8,18 +8,18 @@ export default function Projects() {
       desc: "A web app predicting forest fire risk across Nepal using machine learning ( FastAPI + React).",
       code: "https://github.com/pris1345/Forest_Fire_Prediction",
     },
-    {
-      title: "Portfolio Website",
-      img: "img/port.png",
-      desc: "My personal portfolio showcasing projects, skills, and resume — built with React + Tailwind.",
-      code: "https://github.com/pris1345/Portfolio",
-    },
     // {
-    //   title: "UI/UX Figma Design",
-    //   img: "img/ui.png",
-    //   desc: "A complete UI/UX design for a modern web application created in Figma.",
-    //   code: "",
-    // }
+    //   title: "Portfolio Website",
+    //   img: "img/port.png",
+    //   desc: "My personal portfolio showcasing projects, skills, and resume — built with React + Tailwind.",
+    //   code: "https://github.com/pris1345/Portfolio",
+    // },
+    {
+      title: "E-commerce",
+      img: "img/ecom.png",
+      desc: "A E-commerce website for differenet products along with it's catalog.",
+      code: "https://github.com/pris1345/E-commerce",
+    },
   ];
 
   return (
