@@ -1,3 +1,89 @@
+// import { motion } from "framer-motion";
+// import { TypeAnimation } from "react-type-animation";
+
+// export default function Hero() {
+//   return (
+//     <section
+//       id="home"
+//       className="relative h-screen flex items-center justify-center text-center overflow-hidden"
+//     >
+//       {/* Animated Gradient Background */}
+//       <div className="absolute inset-0 w-full h-full overflow-hidden">
+//         <video
+//           className="w-full h-full object-cover"
+//           src="/blue.mp4"
+//           autoPlay
+//           loop
+//           muted
+//         />
+//       </div>
+
+//       {/* Content */}
+//       <motion.div
+//         className="relative z-10 text-white px-6"
+//         initial={{ opacity: 0, y: 30 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 0.8 }}
+//       >
+//         <motion.h1
+//           className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent"
+//           initial={{ opacity: 0, y: 20 }}
+//           animate={{ opacity: 1, y: 0 }}
+//           transition={{ delay: 0.2, duration: 0.8 }}
+//         >
+//           <span className="text-cyan-400">Brijesh Dahal</span>
+//         </motion.h1>
+//         <motion.div
+//           className="text-2xl md:text-3xl font-semibold mb-4 h-12"
+//           initial={{ opacity: 0 }}
+//           animate={{ opacity: 1 }}
+//           transition={{ delay: 0.5, duration: 0.8 }}
+//         >
+//           <TypeAnimation
+//             sequence={[
+//               'Frontend Developer',
+//               2000,
+//               'UI/UX Designer',
+//               2000,
+//             ]}
+//             wrapper="span"
+//             speed={50}
+//             repeat={Infinity}
+//             className="text-cyan-400"
+//           />
+//         </motion.div>
+//         <motion.p
+//           className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed"
+//           initial={{ opacity: 0, y: 20 }}
+//           animate={{ opacity: 1, y: 0 }}
+//           transition={{ delay: 0.7, duration: 0.8 }}
+//         >
+//           A passionate Developer focused on building responsive, efficient, and creative digital solutions.
+//         </motion.p>
+//         <motion.div
+//           className="flex flex-wrap justify-center gap-4"
+//           initial={{ opacity: 0, y: 20 }}
+//           animate={{ opacity: 1, y: 0 }}
+//           transition={{ delay: 0.9, duration: 0.8 }}
+//         >
+//           <a
+//             href="#projects"
+//             className="group relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold px-8 py-3 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50 hover:scale-105"
+//           >
+//             <span className="relative z-10">View My Work</span>
+//             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+//           </a>
+//           <a
+//             href="#contact"
+//             className="border-2 border-cyan-400 text-cyan-400 font-semibold px-8 py-3 rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/50 hover:scale-105"
+//           >
+//             Contact Me
+//           </a>
+//         </motion.div>
+//       </motion.div>
+//     </section>
+//   );
+// }
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -5,82 +91,111 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center justify-center text-center overflow-hidden"
+      className="relative min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden px-6"
     >
-      {/* Animated Gradient Background */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <video
-          className="w-full h-full object-cover"
-          src="/blue.mp4"
-          autoPlay
-          loop
-          muted
-        />
-      </div>
+      {/* Subtle dot grid background */}
+      <div
+        className="absolute inset-0 opacity-[0.35] pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, #D1D1D1 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+        }}
+      />
 
-      {/* Content */}
-      <motion.div
-        className="relative z-10 text-white px-6"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+      {/* Soft radial fade in center so content stays clean */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,_white_40%,_transparent_100%)] pointer-events-none" />
+
+      {/* Ghost watermark name */}
+      <motion.span
+        className="absolute select-none pointer-events-none font-display font-semibold text-[#111]/[0.04] text-[clamp(5rem,18vw,16rem)] leading-none whitespace-nowrap top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 1.2 }}
       >
+        Brijesh Dahal
+      </motion.span>
+
+      {/* Main content */}
+      <div className="relative z-10 max-w-3xl w-full text-center">
+        {/* Name */}
         <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent"
-          initial={{ opacity: 0, y: 20 }}
+          className="font-display text-[clamp(3rem,9vw,7rem)] font-semibold text-[#111] leading-[1.0] tracking-tight mb-6"
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
+          transition={{ delay: 0.35, duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
         >
-          <span className="text-cyan-400">Brijesh Dahal</span>
+          Brijesh
+          <span className="text-[#555]">Dahal</span>
         </motion.h1>
+
         <motion.div
-          className="text-2xl md:text-3xl font-semibold mb-4 h-12"
+          className="h-8 mb-6 flex items-center justify-center gap-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
         >
+          <span className="text-xs tracking-widest text-[#ccc]">—</span>
           <TypeAnimation
-            sequence={[
-              'Frontend Developer',
-              2000,
-              'UI/UX Designer',
-              2000,
-            ]}
+            sequence={["Frontend Developer", 2200, "UI / UX Designer", 2200]}
             wrapper="span"
-            speed={50}
+            speed={55}
             repeat={Infinity}
-            className="text-cyan-400"
+            className="text-xs uppercase tracking-[0.2em] text-[#888]"
           />
+          <span className="text-xs tracking-widest text-[#ccc]">—</span>
         </motion.div>
+
+        {/* Bio */}
         <motion.p
-          className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
+          className="text-sm md:text-base text-[#888] leading-relaxed max-w-xl mx-auto mb-12 font-light"
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.8 }}
+          transition={{ delay: 0.75, duration: 0.7 }}
         >
-          A passionate Developer focused on building responsive, efficient, and creative digital solutions.
+          Focused on building responsive, thoughtful digital experiences — where
+          clean code meets considered design.
         </motion.p>
+
+        {/* CTAs */}
         <motion.div
-          className="flex flex-wrap justify-center gap-4"
-          initial={{ opacity: 0, y: 20 }}
+          className="flex flex-wrap items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9, duration: 0.8 }}
+          transition={{ delay: 0.9, duration: 0.6 }}
         >
           <a
             href="#projects"
-            className="group relative bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold px-8 py-3 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50 hover:scale-105"
+            className="text-[0.7rem] uppercase tracking-[0.12em] font-medium bg-[#111] text-white px-7 py-3 hover:bg-[#333] transition-colors duration-300"
           >
-            <span className="relative z-10">View My Work</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            View My Work
           </a>
           <a
             href="#contact"
-            className="border-2 border-cyan-400 text-cyan-400 font-semibold px-8 py-3 rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/50 hover:scale-105"
+            className="text-[0.7rem] uppercase tracking-[0.12em] font-medium text-[#111] border border-[#E5E5E5] px-7 py-3 hover:border-[#111] transition-all duration-300"
           >
             Contact Me
           </a>
         </motion.div>
-      </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          className="mt-20 flex flex-col items-center gap-2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.3, duration: 0.6 }}
+        >
+          <span className="text-[0.6rem] uppercase tracking-[0.25em] text-[#ccc]">
+            Scroll
+          </span>
+          <motion.div
+            className="w-px h-10 bg-gradient-to-b from-[#ccc] to-transparent"
+            animate={{ scaleY: [1, 0.4, 1] }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+            style={{ transformOrigin: "top" }}
+          />
+        </motion.div>
+      </div>
     </section>
   );
 }
