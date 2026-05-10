@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 const projects = [
   {
     number: "01",
-    title: "Wildfire Prediction System",
-    img: "img/forest.png",
-    desc: "A web app predicting forest fire risk across Nepal using machine learning — built with FastAPI and React.",
-    tags: ["React", "FastAPI", "Machine Learning"],
-    code: "https://github.com/pris1345/Forest_Fire_Prediction",
+    title: "Movie_Search",
+    img: "img/Movie.png",
+    desc: "A movie search web page to browse, search, and save favorite movies using OMDb API — built with React, Tailwind CSS, Context API, and React Router.",
+    tags: ["React", "Tailwind CSS"],
+    code: "https://github.com/pris1345/Movie_search",
   },
   {
     number: "02",
@@ -121,6 +121,18 @@ export default function Projects() {
                       className="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.12em] font-medium text-[#111] border border-[#111] px-5 py-2.5 hover:bg-[#111] hover:text-white transition-all duration-300 group/btn"
                     >
                       View Code
+                      <span className="transition-transform duration-300 group-hover/btn:translate-x-1">
+                        →
+                      </span>
+                    </a>
+
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.12em] font-medium text-[#111] border border-[#111] px-5 py-2.5 hover:bg-[#111] hover:text-white transition-all duration-300 group/btn"
+                    >
+                      Demo
                       <span className="transition-transform duration-300 group-hover/btn:translate-x-1">
                         →
                       </span>
