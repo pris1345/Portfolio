@@ -44,7 +44,7 @@ export default function Navbar() {
               </motion.a>
             ))}
             <motion.a
-              href="/Resume_BRIJESH_DAHAL (2).pdf"
+              href="/Resume_BRIJESH_DAHAL (4).pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
@@ -97,7 +97,7 @@ export default function Navbar() {
             </motion.a>
           ))}
           <motion.a
-            href="/Resume_BRIJESH_DAHAL (2).pdf"
+            href="/Resume_BRIJESH_DAHAL (4).pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[0.7rem] uppercase tracking-[0.1em] font-medium text-[#111] border border-[#111] px-4 py-2 hover:bg-[#111] hover:text-white transition-all duration-200"

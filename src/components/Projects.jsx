@@ -8,6 +8,7 @@ const projects = [
     desc: "A movie search web page to browse, search, and save favorite movies using OMDb API — built with React, Tailwind CSS, Context API, and React Router.",
     tags: ["React", "Tailwind CSS"],
     code: "https://github.com/pris1345/Movie_search",
+    demo: "https://movie-search-ashen-nu.vercel.app/",
   },
   {
     number: "02",
@@ -16,6 +17,7 @@ const projects = [
     desc: "A full e-commerce website for different products along with a complete product catalog.",
     tags: ["React", "Tailwind CSS"],
     code: "https://github.com/pris1345/E-commerce",
+    demo: "https://pris1345.github.io/E-commerce/",
   },
 ];
 
@@ -127,7 +129,7 @@ export default function Projects() {
                     </a>
 
                     <a
-                      href={project.code}
+                      href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.12em] font-medium text-[#111] border border-[#111] px-5 py-2.5 hover:bg-[#111] hover:text-white transition-all duration-300 group/btn"
