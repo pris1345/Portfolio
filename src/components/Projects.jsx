@@ -13,10 +13,10 @@ const projects = [
   {
     number: "02",
     title: "E-Commerce Platform",
-    img: "img/ecom.png",
+    img: "img/ecommerce.png",
     desc: "A full e-commerce website for different products along with a complete product catalog.",
     tags: ["React", "Tailwind CSS"],
-    code: "https://github.com/pris1345/E-commerce",
+    code: "https://github.com/pris1345/Ecom",
     demo: "https://pris1345.github.io/E-commerce/",
   },
 ];
